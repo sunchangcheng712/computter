@@ -1,0 +1,40 @@
+/*定制搜索框的大小*/
+#header>.navbar>.form-inline>.input-group>input{
+  width:300px;
+}
+/*定制主导航当前导航项的字体颜色*/
+#header>.nav .nav-link.active,
+#header>.nav .nav-link:hover{
+  background:none;
+  font-weight:bold;
+}
+#header .alert{
+  border:1px solid #a33;
+  color:#922;
+  font-size: 24px;
+  background:#fee;
+  padding:10px;
+}
+#header .alert>.close{
+  float:right;
+  font-weight:bold;
+  opacity:.5;
+  cursor:pointer;
+}
+#header .alert>.close:hover{opacity:1}
+#header .fade{ /*定义淡入淡出动画的初始状态,常驻元素*/
+  width:400px; height:100px;
+  position:fixed; top:8%; left:49%;
+  margin-left:-210px; 
+  margin-top:-200px;
+  opacity:0;
+  overflow:hidden;
+  transition:all .5s linear;
+}
+#header .in{ /*定义淡入淡出动画的结束状态*/
+  width:400px; height:100px;
+  position:fixed; top:8%; left:49%;
+  margin-left:-210px; 
+  margin-top:-60px;
+  opacity:1;
+}
